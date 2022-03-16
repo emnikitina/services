@@ -1,1 +1,3 @@
 # services
+
+This project is a setting up a multi-service cluster using Kubernetes such as Nginx, Wordpress, phpMyAdmin, SQL database, Grafana, FTPS. Each service run in a dedicated container, containers are build the images written by me based on Alpine Linux. Differenbt port are used for each servives, WordPress website listening on port 5050, phpMyAdmin - on port 5000, a container with an Nginx server listening on ports 80 and 443. Port 80 is in http and a systematic redirection of type 301 to 443, which is in https. A FTPS server listening on port 21, a Grafana platform - on port 3000. A Telegraf is also used to provide incessant cluster performance even if one of the services is crash.
